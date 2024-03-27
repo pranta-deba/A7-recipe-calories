@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Lexend", sans-serif;
+}
+
+.banner {
+    background: linear-gradient(0deg, rgba(21, 11, 43, 0.90) 0%, rgba(21, 11, 43, 0.00) 100%), url('https://i.ibb.co/y4sy0j7/banner.jpg') lightgray 0px -18.896px / 100% 123.31% no-repeat;
+}
+
+.card-shadows {
+    border-radius: 16px;
+    border: 1px solid rgba(40, 40, 40, 0.20);
+
+}
+.overflowCard::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+th,td{
+    text-align: center;
+    padding: 0 10px;
+}
+th{
+    padding-bottom: 10px;
+}
+td{
+    border-bottom: 1px solid #b9b7b78f;
+    border-top: 1px solid #b9b7b78f;
+    padding: 10px 5px;
+}
+.sidebarCart{
+    background: rgba(40, 40, 40, 0.03);
+
+}
+.cooking td{
+    padding: 15px 5px;
+}
+
+
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #000000;
+  font-size: 10px;
+  margin: 5px auto 50px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+
+.loadCard
+  {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .loadCardContent {
+    padding: 20px;
+  }
+  .loadCard h2,.loadCard .p1{
+    height: 40px;
+  }
+  .loadCard .p2{
+    height: 30px;
+    margin-bottom: 8px;
+  }
+  .loadCard .p3{
+    height: 100px;
+  }
+  .loadCard .p4{
+    height: 30px;
+    width: 110px;
+  }
+  .loadCard .p5{
+    height: 50px;
+    width: 110px;
+  }
+  .loadCard figure, .loadCard h2, .loadCard .p1, .p2, .p3, .p4, .p5{
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    border-radius: 5px;
+    background-size: 200% 100%;
+    animation: 1s shine linear infinite;
+  }
+  @keyframes shine {
+    to {
+      background-position-x: -200%;
+    }
+  }
